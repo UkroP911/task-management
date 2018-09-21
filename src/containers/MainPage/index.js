@@ -33,7 +33,7 @@ class MainPage extends Component{
             this.setState({
                 task: '',
             });
-            this.props.onAddTask(task,dateFns.format(NoteTime, 'HH:MM'));
+            this.props.onAddTask(task);
         }
         e.preventDefault();
     }
@@ -47,7 +47,7 @@ class MainPage extends Component{
     }
 
     checkCompletedTask(id){
-        return this.props.onCompletedTask(id,dateFns.format(NoteTime, 'HH:MM'));
+        return this.props.onCompletedTask(id);
     }
 
     openPopup(id){
