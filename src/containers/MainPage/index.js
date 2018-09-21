@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import dateFns from "date-fns";
 
 import rootAction from './../../actions';
 
